@@ -21,8 +21,6 @@ for transcript in transcript_list:
 
 text_wo_space = text.replace(" ", "")
 
-print(text_wo_space, "\n\n")
-
 spacing = Spacing()
 text = spacing(text_wo_space)
 
