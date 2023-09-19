@@ -28,13 +28,13 @@ def get_category(video_id):
 
 
 # append video_id only with categoryId == 25
-wf = open('comment_news_video_ids.txt', 'a') 
+wf = open('commenter_news_video_ids.txt', 'a') 
 
-with open('comment_video_id.txt', 'r') as rf:
+with open('commenter_video_id.txt', 'r') as rf:
     # Read all lines from the file and store them in a list
     lines = rf.readlines()
 
-for id in lines[5001:15001]:
+for id in lines[0:10000]:
     video_id = id.replace("\n", "")
     if get_category(video_id) != '25':
         continue
