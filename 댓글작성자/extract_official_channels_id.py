@@ -36,7 +36,7 @@ with open('commenter_video_id.txt', 'r') as rf:
     # Read all lines from the file and store them in a list
     lines = rf.readlines()
 
-for id in lines[0:10000]:
+for id in lines[10001:20000]:
     video_id = id.replace("\n", "")
     if get_channelId(video_id) in official_news_channel_ids:
         wf.write(video_id)
