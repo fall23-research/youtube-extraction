@@ -58,7 +58,7 @@ with open('commenter_video_id.txt', 'r') as rf:
     # Read all lines from the file and store them in a list
     lines = rf.readlines()
 
-for id in lines[20000:30000]:
+for id in lines[30000:]:
     video_id = id.replace("\n", "")
     if get_covid_news_video_id(video_id):
         print("COVID topic found")
