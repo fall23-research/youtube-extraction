@@ -5,18 +5,18 @@ database = sqlite3.connect("news_comment.sqlite")
 databaseCursor = database.cursor()
 
 
-databaseCursor.execute('''CREATE TABLE IF NOT EXISTS news_comment(
-                            id INTEGER PRIMARY KEY ASC,
-                            comment_id TEXT, 
-                            video_id TEXT, 
-                            text_display TEXT,
-                            author_name TEXT,
-                            author_channel_url TEXT, 
-                            like_count INTEGER,
-                            published_at TEXT,
-                            total_reply_count INTEGER
-                            )''')
-database.commit()
+# databaseCursor.execute('''CREATE TABLE IF NOT EXISTS news_comment(
+#                             id INTEGER PRIMARY KEY ASC,
+#                             comment_id TEXT, 
+#                             video_id TEXT, 
+#                             text_display TEXT,
+#                             author_name TEXT,
+#                             author_channel_url TEXT, 
+#                             like_count INTEGER,
+#                             published_at TEXT,
+#                             total_reply_count INTEGER
+#                             )''')
+# database.commit()
 
 
 def execute_batch(query, data):
